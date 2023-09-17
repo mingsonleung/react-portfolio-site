@@ -22,14 +22,14 @@ const Projects = () => {
           title="Portfolio Website"
           tech="Vite, React JS, Tailwind, HTML"
           moreInfoRedirect="GitHub Repo"
-          moreInfoLink="https://github.com/mingsonleung"
+          moreInfoLink="https://github.com/mingsonleung/portfolio-site"
         />
         <ProjectItem
           img={philosophyImg}
           title="Philosophical Chatbot"
           tech="React JS, CSS, HTML"
           moreInfoRedirect="GitHub Repo"
-          moreInfoLink="/chatbot"
+          moreInfoLink="https://github.com/mingsonleung/philosophical-chatbot"
         />
         <ProjectItem
           img={fitnessPalImg}
