@@ -29,7 +29,7 @@ const Projects = () => {
           title="Philosophical Chatbot"
           tech="React JS, CSS, HTML"
           moreInfoRedirect="GitHub Repo"
-          moreInfoLink="https://github.com/mingsonleung/philosophical-chatbot"
+          moreInfoLink="https://github.com/mingsonleung/philosophical-chatbot-dalle"
         />
         <ProjectItem
           img={fitnessPalImg}
