@@ -1,7 +1,12 @@
 import React from "react";
 import bgImage from "../assets/background-img.jpg";
 import { TypeAnimation } from "react-type-animation";
-import { FaGithub, FaLinkedinIn, FaRegEnvelope, FaRegFilePdf } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedinIn,
+  FaRegEnvelope,
+  FaRegFilePdf,
+} from "react-icons/fa";
 
 const Main = () => {
   return (
@@ -36,13 +41,25 @@ const Main = () => {
             />
           </h2>
           <div className="flex justify-between pt-6 max-w-[200px] w-full">
-            <a href="https://github.com/mingsonleung" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://github.com/mingsonleung"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaGithub className="cursor-pointer" size={25} />
             </a>
-            <a href="https://www.linkedin.com/in/mingsonleung/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.linkedin.com/in/mingsonleung/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaLinkedinIn className="cursor-pointer" size={25} />
             </a>
-            <a href="/Resume_MingsonLeung.pdf" target="_blank" rel="noopener noreferrer">
+            <a
+              href="/Resume_MingsonLeung.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaRegFilePdf className="cursor-pointer" size={25} />
             </a>
             <a href="#contact">
