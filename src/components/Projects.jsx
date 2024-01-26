@@ -1,5 +1,6 @@
 import React from "react";
-import ProjectItem from "./ProjectItem";
+import SoftwareProjectItem from "./SoftwareProjectItem";
+import DesignProjectItem from "./DesignProjectItem";
 import rollingImg from "../assets/rollingImg.png";
 import philosophyImg from "../assets/philosophyImg.png";
 import portfolioImg from "../assets/portfolioImg.png";
@@ -18,35 +19,41 @@ const Projects = () => {
       </h1>
       <p className="text-center py-8"></p>
       <div className="grid sm:grid-cols-2 gap-12">
-        <ProjectItem
+        <SoftwareProjectItem
           img={rollingImg}
           title="TFT Rolling Statistics"
           tech="HTML, CSS, JavaScript"
           moreInfoRedirect="GitHub Repo"
           moreInfoLink="https://github.com/mingsonleung/tft-rolling-statistics"
+          deployedRedirect="Project Site"
+          deployedLink="https://rolling-stats.netlify.app/"
         />
-        <ProjectItem
+        <SoftwareProjectItem
           img={philosophyImg}
           title="Philosophical Chatbot"
           tech="React JS, CSS, HTML, OpenAI API"
           moreInfoRedirect="GitHub Repo"
           moreInfoLink="https://github.com/mingsonleung/philosophical-chatbot-dalle"
+          deployedRedirect="Project Site"
+          deployedLink="https://philosophical-chatbot-dalle.netlify.app/"
         />
-        <ProjectItem
+        <SoftwareProjectItem
           img={portfolioImg}
           title="Portfolio Website"
           tech="Vite, React JS, Tailwind, HTML"
           moreInfoRedirect="GitHub Repo"
           moreInfoLink="https://github.com/mingsonleung/portfolio-site"
+          deployedRedirect="Project Site"
+          deployedLink="https://mingson.dev/"
         />
-        <ProjectItem
+        <DesignProjectItem
           img={fitnessPalImg}
           title="MyFitnessPal Redesign"
           tech="Figma, Adobe Photoshop, Google Sheets"
           moreInfoRedirect="Case Study (PDF)"
           moreInfoLink="/MyFitnessPalRedesign.pdf"
         />
-        <ProjectItem
+        <DesignProjectItem
           img={foodBoxImg}
           title="FoodBox Kiosk Prototype"
           tech="Figma, Adobe InDesign, Inkscape, CAD"
