@@ -18,18 +18,25 @@ const Projects = () => {
       <p className="text-center py-8"></p>
       <div className="grid sm:grid-cols-2 gap-12">
         <ProjectItem
+          img={philosophyImg}
+          title="TFT Rolling Statistics"
+          tech="HTML, CSS, JavaScript"
+          moreInfoRedirect="GitHub Repo"
+          moreInfoLink="https://github.com/mingsonleung/tft-rolling-statistics"
+        />
+        <ProjectItem
+          img={philosophyImg}
+          title="Philosophical Chatbot"
+          tech="React JS, CSS, HTML, OpenAI API"
+          moreInfoRedirect="GitHub Repo"
+          moreInfoLink="https://github.com/mingsonleung/philosophical-chatbot-dalle"
+        />
+        <ProjectItem
           img={portfolioImg}
           title="Portfolio Website"
           tech="Vite, React JS, Tailwind, HTML"
           moreInfoRedirect="GitHub Repo"
           moreInfoLink="https://github.com/mingsonleung/portfolio-site"
-        />
-        <ProjectItem
-          img={philosophyImg}
-          title="Philosophical Chatbot"
-          tech="React JS, CSS, HTML"
-          moreInfoRedirect="GitHub Repo"
-          moreInfoLink="https://github.com/mingsonleung/philosophical-chatbot-dalle"
         />
         <ProjectItem
           img={fitnessPalImg}
