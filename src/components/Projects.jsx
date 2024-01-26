@@ -1,7 +1,8 @@
 import React from "react";
 import ProjectItem from "./ProjectItem";
-import portfolioImg from "../assets/portfolioImg.png";
+import rollingImg from "../assets/rollingImg.png";
 import philosophyImg from "../assets/philosophyImg.png";
+import portfolioImg from "../assets/portfolioImg.png";
 import fitnessPalImg from "../assets/fitnessPalImg.png";
 import foodBoxImg from "../assets/foodBoxImg.png";
 import placeholder from "../assets/placeholder.png";
@@ -18,7 +19,7 @@ const Projects = () => {
       <p className="text-center py-8"></p>
       <div className="grid sm:grid-cols-2 gap-12">
         <ProjectItem
-          img={philosophyImg}
+          img={rollingImg}
           title="TFT Rolling Statistics"
           tech="HTML, CSS, JavaScript"
           moreInfoRedirect="GitHub Repo"
