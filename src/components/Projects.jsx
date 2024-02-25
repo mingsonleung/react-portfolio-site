@@ -6,19 +6,28 @@ import philosophyImg from "../assets/philosophyImg.png";
 import portfolioImg from "../assets/portfolioImg.png";
 import fitnessPalImg from "../assets/fitnessPalImg.png";
 import foodBoxImg from "../assets/foodBoxImg.png";
+import lightnoteImg from "../assets/lightnoteImg.png";
 import placeholder from "../assets/placeholder.png";
 
 const Projects = () => {
   return (
     <div
       id="projects"
-      className="max-w-[1040px] min-h-screen m-auto md:pl-20 p-4 py-16"
-    >
+      className="max-w-[1040px] min-h-screen m-auto md:pl-20 p-4 py-16">
       <h1 className="text-4xl font-bold text-center text-[#001b5e]">
         Projects
       </h1>
       <p className="text-center py-8"></p>
       <div className="grid sm:grid-cols-2 gap-12">
+        <SoftwareProjectItem
+          img={lightnoteImg}
+          title="Lightnote"
+          tech="Next.js, Tailwind CSS, Supabase, Kinde, Stripe, Vercel"
+          moreInfoRedirect="GitHub Repo"
+          moreInfoLink="https://github.com/mingsonleung/light-note"
+          deployedRedirect="Project Site"
+          deployedLink="https://lightnote-one.vercel.app/"
+        />
         <SoftwareProjectItem
           img={rollingImg}
           title="TFT Rolling Statistics"
@@ -31,7 +40,7 @@ const Projects = () => {
         <SoftwareProjectItem
           img={philosophyImg}
           title="Philosophical Chatbot"
-          tech="React JS, CSS, HTML, OpenAI API"
+          tech="React.js, CSS, HTML, OpenAI API"
           moreInfoRedirect="GitHub Repo"
           moreInfoLink="https://github.com/mingsonleung/philosophical-chatbot-dalle"
           deployedRedirect="Project Site"
@@ -40,7 +49,7 @@ const Projects = () => {
         <SoftwareProjectItem
           img={portfolioImg}
           title="Portfolio Website"
-          tech="Vite, React JS, Tailwind, HTML"
+          tech="Vite, React.js, Tailwind CSS, Netlify"
           moreInfoRedirect="GitHub Repo"
           moreInfoLink="https://github.com/mingsonleung/portfolio-site"
           deployedRedirect="Project Site"
