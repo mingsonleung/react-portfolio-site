@@ -44,22 +44,25 @@ const Main = () => {
             <a
               href="https://github.com/mingsonleung"
               target="_blank"
-              rel="noopener noreferrer">
+              rel="noopener noreferrer"
+              aria-label="GitHub Link">
               <FaGithub className="cursor-pointer" size={25} />
             </a>
             <a
               href="https://www.linkedin.com/in/mingsonleung/"
               target="_blank"
-              rel="noopener noreferrer">
+              rel="noopener noreferrer"
+              aria-label="LinkedIn Link">
               <FaLinkedinIn className="cursor-pointer" size={25} />
             </a>
             <a
               href="/Resume_MingsonLeung.pdf"
               target="_blank"
-              rel="noopener noreferrer">
+              rel="noopener noreferrer"
+              aria-label="Resume PDF Link">
               <FaRegFilePdf className="cursor-pointer" size={25} />
             </a>
-            <a href="#contact">
+            <a href="#contact" aria-label="Contact Section">
               <FaRegEnvelope className="cursor-pointer" size={25} />
             </a>
           </div>
