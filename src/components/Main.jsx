@@ -14,7 +14,7 @@ const Main = () => {
       <img
         className="w-full h-screen object-cover object-left scale-x-[-1]"
         src={bgImage}
-      ></img>
+        alt=""></img>
       <div className="w-full h-screen absolute top-0 left-0 bg-white/50">
         <div className="max-w-[700px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center">
           <h1 className="sm:text-5xl text-4xl font-bold text-gray-800">
@@ -44,22 +44,19 @@ const Main = () => {
             <a
               href="https://github.com/mingsonleung"
               target="_blank"
-              rel="noopener noreferrer"
-            >
+              rel="noopener noreferrer">
               <FaGithub className="cursor-pointer" size={25} />
             </a>
             <a
               href="https://www.linkedin.com/in/mingsonleung/"
               target="_blank"
-              rel="noopener noreferrer"
-            >
+              rel="noopener noreferrer">
               <FaLinkedinIn className="cursor-pointer" size={25} />
             </a>
             <a
               href="/Resume_MingsonLeung.pdf"
               target="_blank"
-              rel="noopener noreferrer"
-            >
+              rel="noopener noreferrer">
               <FaRegFilePdf className="cursor-pointer" size={25} />
             </a>
             <a href="#contact">
