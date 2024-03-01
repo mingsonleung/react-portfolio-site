@@ -100,6 +100,7 @@ const Contact = () => {
               }`}
               type="text"
               name="name"
+              autocomplete="name"
               value={formData.name}
               onChange={handleChange}
               onBlur={handleBlur}
@@ -119,6 +120,7 @@ const Contact = () => {
               }`}
               type="text"
               name="phone"
+              autocomplete="tel"
               value={formData.phone}
               onChange={handleChange}
               onBlur={handleBlur}
@@ -139,6 +141,7 @@ const Contact = () => {
             }`}
             type="email"
             name="email"
+            autocomplete="email"
             value={formData.email}
             onChange={handleChange}
             onBlur={handleBlur}
@@ -167,7 +170,9 @@ const Contact = () => {
           )}
         </div>
         <div className="flex flex-col py-2">
-          <label htmlFor="message" className="uppercase text-sm py-2">Message</label>
+          <label htmlFor="message" className="uppercase text-sm py-2">
+            Message
+          </label>
           <textarea
             id="message"
             className={`border-2 rounded-lg p-3 ${
