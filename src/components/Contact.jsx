@@ -66,8 +66,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="max-w-[1040px] min-h-screen m-auto md:pl-20 p-4 py-16"
-    >
+      className="max-w-[1040px] min-h-screen m-auto md:pl-20 p-4 py-16">
       <h1 className="py-4 text-4xl font-bold text-center text-[#001b5e]">
         Contact
       </h1>
@@ -75,8 +74,7 @@ const Contact = () => {
         action="https://api.web3forms.com/submit"
         method="POST"
         id="form"
-        onSubmit={handleSubmit}
-      >
+        onSubmit={handleSubmit}>
         <input type="hidden" name="access_key" value={accessKey} />
         <input
           type="hidden"
@@ -92,8 +90,11 @@ const Contact = () => {
         />
         <div className="grid md:grid-cols-2 gap-4 w-full py-2">
           <div className="flex flex-col">
-            <label className="uppercase text-sm py-2">Name</label>
+            <label htmlFor="name" className="uppercase text-sm py-2">
+              Name
+            </label>
             <input
+              id="name"
               className={`border-2 rounded-lg p-3 flex ${
                 formErrors.name ? "border-red-500" : "border-gray-300"
               }`}
@@ -108,8 +109,11 @@ const Contact = () => {
             )}
           </div>
           <div className="flex flex-col">
-            <label className="uppercase text-sm py-2">Phone</label>
+            <label htmlFor="phone" className="uppercase text-sm py-2">
+              Phone
+            </label>
             <input
+              id="phone"
               className={`border-2 rounded-lg p-3 flex ${
                 formErrors.phone ? "border-red-500" : "border-gray-300"
               }`}
@@ -125,8 +129,11 @@ const Contact = () => {
           </div>
         </div>
         <div className="flex flex-col py-2">
-          <label className="uppercase text-sm py-2">Email</label>
+          <label htmlFor="email" className="uppercase text-sm py-2">
+            Email
+          </label>
           <input
+            id="email"
             className={`border-2 rounded-lg p-3 flex ${
               formErrors.email ? "border-red-500" : "border-gray-300"
             }`}
@@ -141,8 +148,11 @@ const Contact = () => {
           )}
         </div>
         <div className="flex flex-col py-2">
-          <label className="uppercase text-sm py-2">Subject</label>
+          <label htmlFor="subject" className="uppercase text-sm py-2">
+            Subject
+          </label>
           <input
+            id="subject"
             className={`border-2 rounded-lg p-3 flex ${
               formErrors.subject ? "border-red-500" : "border-gray-300"
             }`}
@@ -157,8 +167,9 @@ const Contact = () => {
           )}
         </div>
         <div className="flex flex-col py-2">
-          <label className="uppercase text-sm py-2">Message</label>
+          <label htmlFor="message" className="uppercase text-sm py-2">Message</label>
           <textarea
+            id="message"
             className={`border-2 rounded-lg p-3 ${
               formErrors.message ? "border-red-500" : "border-gray-300"
             }`}
@@ -166,8 +177,7 @@ const Contact = () => {
             name="message"
             value={formData.message}
             onChange={handleChange}
-            onBlur={handleBlur}
-          ></textarea>
+            onBlur={handleBlur}></textarea>
           {formErrors.message && touchedFields.message && (
             <p className="text-red-500">{formErrors.message}</p>
           )}
@@ -179,8 +189,7 @@ const Contact = () => {
               : "opacity-100 cursor-pointer"
           }`}
           type="submit"
-          disabled={!isFormValid}
-        >
+          disabled={!isFormValid}>
           Send Message
         </button>
       </form>
