@@ -100,7 +100,7 @@ const Contact = () => {
               }`}
               type="text"
               name="name"
-              autocomplete="name"
+              autoComplete="name"
               value={formData.name}
               onChange={handleChange}
               onBlur={handleBlur}
@@ -120,7 +120,7 @@ const Contact = () => {
               }`}
               type="text"
               name="phone"
-              autocomplete="tel"
+              autoComplete="tel"
               value={formData.phone}
               onChange={handleChange}
               onBlur={handleBlur}
@@ -141,7 +141,7 @@ const Contact = () => {
             }`}
             type="email"
             name="email"
-            autocomplete="email"
+            autoComplete="email"
             value={formData.email}
             onChange={handleChange}
             onBlur={handleBlur}
