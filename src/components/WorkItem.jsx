@@ -13,7 +13,7 @@ const WorkItem = ({ title, year, role, details }) => {
             <span className="text-lg font-semibold text-[#001b5e] my-1">
               {title}
             </span>
-            <span className="inline-block px-4 py-1 font-semibold text-white bg-[#001b5e] rounded-md max-w-[200px] my-1">
+            <span className="inline-block px-4 py-1 font-semibold text-white bg-[#001b5e] rounded-md max-w-[250px] my-1">
               {year}
             </span>
           </div>
