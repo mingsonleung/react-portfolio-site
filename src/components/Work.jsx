@@ -3,6 +3,12 @@ import WorkItem from "./WorkItem";
 
 const data = [
   {
+    title: "CA Department of Technology | Sacramento, CA",
+    year: "August 2024 - Present",
+    role: "Information Technology Associate",
+    details: "",
+  },
+  {
     title: "UC San Diego | La Jolla, CA",
     year: "September 2021 - October 2023",
     role: "Lead Technician - ITS Service Desk",
